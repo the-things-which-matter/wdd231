@@ -21,6 +21,11 @@ header {
     font-weight: bold;
 }
 
+.kampala {
+    width: 200px;
+    height: 210px;
+}
+
 .profile-container {
     background-color: #1a252f;
     padding: 1rem;
