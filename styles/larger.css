@@ -1,45 +1,28 @@
-/* larger.css - Styles for larger screens */
-/**@media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    main {
-        max-width: 80%;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .card:first-of-type {
-        grid-column: span 2;
-    }
-}*/
-
-
-
-
-
 @media (min-width: 768px) {
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5rem;
         align-items: start;
     }
 
     .profile-img {
-        max-width: 100px; /* Adjust size as needed */
+        max-width: 100px;
         height: auto;
         border-radius: 10%;
     }
 
     nav ul {
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
     nav ul li {
         margin: 0 1rem;
+    }
+
+    .hamburger {
+        display: none;
     }
 }
