@@ -124,3 +124,30 @@ section h2 {
     border-radius: 5px;
     text-align: center;
 }
+
+
+
+#courses-list {
+    margin-top: 10px;
+}
+
+#courses-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#courses-list li {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    width: auto; 
+    min-width: 100px; 
+}
