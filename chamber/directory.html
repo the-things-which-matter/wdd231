@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of members in the Kampala Chamber of Commerce.">
+    <meta name="author" content="Brigham Iga">
+    <meta property="og:title" content="Kampala Chamber of Commerce - Members Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/kampala.jpg">
+    <meta property="og:url" content="https://yourchamberwebsite.com/directory">
+    <title>Kampala Chamber of Commerce - Directory</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script defer src="scripts/directory.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/kampala.jpg" alt="Kampala Chamber of Commerce Logo" width="100">
+        <h1>Kampala Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Business Directory</h2>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <section id="members-container" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Kampala Chamber of Commerce. All rights reserved.</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
