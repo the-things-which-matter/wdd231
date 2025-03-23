@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridViewBtn = document.getElementById("grid-view");
     const listViewBtn = document.getElementById("list-view");
     
-    // Function to fetch member data
+  
     async function fetchMembers() {
         try {
             const response = await fetch("data/members.json");
