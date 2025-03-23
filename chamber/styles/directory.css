@@ -33,6 +33,21 @@ nav a.active {
     border-bottom: 2px solid #ffb703;
 }
 
+
+
+
+.list .member-card {
+    list-style-type: none;  
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding: 10px;
+}
+
+.list {
+    padding-left: 0; /* Removes default padding */
+}
 #members-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
