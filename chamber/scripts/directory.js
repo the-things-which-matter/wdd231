@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridViewBtn = document.getElementById("grid-view");
     const listViewBtn = document.getElementById("list-view");
     
+    // Function to fetch member data
     async function fetchMembers() {
         try {
             const response = await fetch("data/members.json");
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching members:", error);
         }
     }
-    
+   
     function displayMembers(members) {
         membersContainer.innerHTML = "";
         members.forEach(member => {
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
                 <p><strong>Membership Level:</strong> ${getMembershipLevel(member.level)}</p>
+                <p><strong>Other Information:</strong> ${member.other_info}</p>
             `;
             
             membersContainer.appendChild(card);
@@ -40,16 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     
+
     gridViewBtn.addEventListener("click", () => {
         membersContainer.classList.remove("list");
         membersContainer.classList.add("grid");
     });
     
+   
     listViewBtn.addEventListener("click", () => {
         membersContainer.classList.remove("grid");
         membersContainer.classList.add("list");
     });
     
+  
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
     
