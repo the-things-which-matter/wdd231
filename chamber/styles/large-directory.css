@@ -1,9 +1,10 @@
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
     #members-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .member-card {
+        width: 100%;
     }
 }

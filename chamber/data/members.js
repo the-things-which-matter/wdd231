@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById("year");
     const lastModifiedSpan = document.getElementById("lastModified");
 
-    // Update footer info
     yearSpan.textContent = new Date().getFullYear();
     lastModifiedSpan.textContent = document.lastModified;
 
@@ -53,6 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
     listViewButton.addEventListener("click", () => {
         membersContainer.classList.remove("grid");
         membersContainer.classList.add("list");
+    });
+
+    
+    document.querySelectorAll("nav a").forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+        }
     });
 
     fetchMembers();

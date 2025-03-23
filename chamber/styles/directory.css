@@ -1,64 +1,82 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* General Styling */
 body {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     background-color: #f8f8f8;
     color: #333;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #2596be;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+
+nav {
+    background-color: #8ecae6;
+    padding: 10px;
+    text-align: center;
 }
+
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    margin: 0 10px;
     font-weight: bold;
 }
-.view-toggle {
-    text-align: center;
-    margin: 1rem;
+
+nav a.active {
+    border-bottom: 2px solid #ffb703;
 }
-button {
-    background-color: #ffb703;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 5px;
-}
+
 #members-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+
 .member-card {
-    background-color: white;
+    background: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+.member-card img {
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ffb703;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* List View */
 .list .member-card {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 15px;
     text-align: left;
-    padding: 10px;
 }
+
+/* Footer */
 footer {
     background-color: #2596be;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
     margin-top: 20px;
 }
+
