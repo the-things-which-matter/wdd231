@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridViewBtn = document.getElementById("grid-view");
     const listViewBtn = document.getElementById("list-view");
 
-    // Fetch and Display Members
+ 
     async function fetchMembers() {
         try {
             const response = await fetch("data/members.json");
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Display Members
+
     function displayMembers(members) {
-        membersContainer.innerHTML = ""; // Clear previous content
+        membersContainer.innerHTML = ""; 
         members.forEach(member => {
             const card = document.createElement("div");
             card.classList.add("member-card");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Get Membership Level
+  
     function getMembershipLevel(level) {
         switch (level) {
             case 3: return "Gold Member";
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Toggle Views
+  
     gridViewBtn.addEventListener("click", () => {
         membersContainer.classList.remove("list");
         membersContainer.classList.add("grid");
@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
         membersContainer.classList.add("list");
     });
 
-    // Footer - Auto Update Year and Last Modified
+   
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
 
-    fetchMembers(); // Load Members
+    fetchMembers(); 
 });
