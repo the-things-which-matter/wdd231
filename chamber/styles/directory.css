@@ -1,3 +1,4 @@
+/* CSS */
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #f8f8f8;
@@ -5,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 header {
     background-color: #2596be;
@@ -42,7 +42,6 @@ nav a.active {
     border-bottom: 2px solid #ffb703;
 }
 
-
 .view-toggle {
     text-align: center;
     margin: 20px 0;
@@ -61,7 +60,6 @@ nav a.active {
 .view-toggle button:hover {
     background-color: #e09e02;
 }
-
 
 #members-container {
     display: grid;
@@ -93,7 +91,6 @@ nav a.active {
     text-decoration: none;
 }
 
-
 .list .member-card {
     display: flex;
     align-items: center;
@@ -101,7 +98,6 @@ nav a.active {
     text-align: left;
     padding: 10px;
 }
-
 
 footer {
     background-color: #2596be;
