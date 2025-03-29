@@ -14,9 +14,22 @@ header {
     padding: 20px;
 }
 
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    
+ 
+   
+}
+
 .logo {
     display: block;
     margin: 0 auto;
+    border-radius: 10%;
+    margin-bottom: 20px;
 }
 
 nav {
