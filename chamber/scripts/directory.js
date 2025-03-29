@@ -1,8 +1,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const membersContainer = document.getElementById("members-container");
     const gridViewBtn = document.getElementById("grid-view");
@@ -27,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.add("member-card");
             
             card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} Logo" width="100">
+                <img src="${member.image}" alt="${member.name} Logo" width="100">
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>

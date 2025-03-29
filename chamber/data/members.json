@@ -4,7 +4,7 @@
       "address": "123 Innovation Drive, Kampala, Uganda",
       "phone": "+256 700 123456",
       "website": "https://techsolutions.com",
-      "image": "techsolutions.png",
+      "image": "images/Tech-solutions.webp",
       "membership_level": 3,
       "description": "A leading software development company specializing in AI and web applications."
     },
@@ -13,7 +13,7 @@
       "address": "45 Eco Street, Jinja, Uganda",
       "phone": "+256 701 987654",
       "website": "https://greenearth.com",
-      "image": "greenearth.png",
+      "image": "images/green-earth.webp",
       "membership_level": 2,
       "description": "A company dedicated to sustainable energy solutions and eco-friendly innovations."
     },
@@ -22,7 +22,7 @@
       "address": "89 Business Lane, Kampala, Uganda",
       "phone": "+256 772 564738",
       "website": "https://kampalamarketing.com",
-      "image": "kampalamarketing.png",
+      "image": "images/marketing.webp",
       "membership_level": 1,
       "description": "Experts in digital marketing, social media management, and brand promotion."
     },
@@ -31,7 +31,7 @@
       "address": "78 Digital Avenue, Entebbe, Uganda",
       "phone": "+256 776 234567",
       "website": "https://ugtechhub.com",
-      "image": "ugtechhub.png",
+      "image": "images/tech-hub.webp",
       "membership_level": 3,
       "description": "An incubation hub for tech startups focusing on mobile and web solutions."
     },
@@ -40,7 +40,7 @@
       "address": "12 Agro Road, Mbarara, Uganda",
       "phone": "+256 755 876543",
       "website": "https://freshfarms.com",
-      "image": "freshfarms.png",
+      "image": "images/fresh-farm.webp",
       "membership_level": 2,
       "description": "Producers of organic vegetables and fruits, supporting sustainable farming."
     },
@@ -49,7 +49,7 @@
       "address": "5 Airport Road, Entebbe, Uganda",
       "phone": "+256 712 345678",
       "website": "https://skylinelogistics.com",
-      "image": "skylinelogistics.png",
+      "image": "images/skyline.webp",
       "membership_level": 1,
       "description": "Reliable logistics and cargo transportation services across East Africa."
     },
@@ -58,7 +58,7 @@
       "address": "99 Wealth Street, Kampala, Uganda",
       "phone": "+256 798 112233",
       "website": "https://elitefinancials.com",
-      "image": "elitefinancials.png",
+      "image": "images/financial-services.webp",
       "membership_level": 3,
       "description": "Providing investment consulting, wealth management, and tax advisory services."
     }
