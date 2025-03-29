@@ -62,7 +62,7 @@ nav a.active {
 
 .view-toggle button {
     background-color: #ffb703;
-    color: white;
+    color: #1a252f;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -98,7 +98,7 @@ nav a.active {
     display: inline-block;
     margin-top: 10px;
     background-color: #ffb703;
-    color: white;
+    color: #1a252f;
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
