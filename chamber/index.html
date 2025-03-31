@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Home Page for San Miguel, El Salvador">
+    <meta name="author" content="Brigham Iga">
+    <meta property="og:title" content="San Miguel Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-image.jpg">
+    <meta property="og:url" content="index.html">
+    <title>San Miguel Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/first.css">
+    
+    <script defer src="scripts/first.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/san-miguel-logo.webp" alt="San Miguel Chamber of Commerce Logo" width="100">
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu" class="hidden">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Image Section -->
+        <section id="hero">
+            <img src="images/hero-image.jpg" alt="San Miguel Chamber of Commerce Hero Image">
+            <h1>Welcome to the San Miguel Chamber of Commerce</h1>
+            <p>Your gateway to business opportunities in San Miguel, El Salvador.</p>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="cta">
+            <a href="join.html" class="cta-link">Join the Chamber of Commerce</a>
+        </section>
+
+        <!-- Current Events Section -->
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <p>Check out the latest events happening in San Miguel!</p>
+            <ul>
+                <li>Event 1: Networking Breakfast - March 2025</li>
+                <li>Event 2: Business Conference - April 2025</li>
+                <li>Event 3: Annual Chamber Gala - May 2025</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p>San Miguel's weather forecast:</p>
+            <p id="weather-info">Loading...</p>
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section id="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <h3>Company A</h3>
+                <p>Description of Company A and their services.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company B</h3>
+                <p>Description of Company B and their services.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company C</h3>
+                <p>Description of Company C and their services.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> San Miguel Chamber of Commerce. All rights reserved.</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    
+</body>
+</html>
