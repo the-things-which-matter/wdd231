@@ -53,7 +53,7 @@ nav a.active {
     border-bottom: 2px solid #ffb703;
 }
 
-/* Main Hero Section */
+
 #hero {
     position: relative;
     width: 100%;
@@ -67,13 +67,14 @@ nav a.active {
 #hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: black;
 }
 
 #hero p {
     font-size: 1.2rem;
+    color: black;
 }
 
-/* Call to Action */
 #cta {
     text-align: center;
     margin: 30px 0;
@@ -93,7 +94,7 @@ nav a.active {
     background-color: #e09e02;
 }
 
-/* Current Events Section */
+
 #current-events {
     margin: 20px 0;
     text-align: center;
@@ -109,7 +110,7 @@ nav a.active {
     font-size: 1rem;
 }
 
-/* Weather Section */
+
 #weather {
     background-color: #e7f1f9;
     padding: 20px;
@@ -123,7 +124,7 @@ nav a.active {
     margin-top: 10px;
 }
 
-/* Company Spotlights Section */
+
 #company-spotlights {
     margin: 30px 0;
     text-align: center;
