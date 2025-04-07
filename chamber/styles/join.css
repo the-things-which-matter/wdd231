@@ -54,13 +54,13 @@ nav a.active {
 }
 
 
-/* Heading Section */
+
 .heading {
     text-align: center;
     margin-top: 100px;
 }
 
-/* Call to Action */
+
 #cta {
     text-align: center;
     margin: 30px 0;
@@ -80,7 +80,7 @@ nav a.active {
     background-color: #e09e02;
 }
 
-/* Current Events Section */
+
 #current-events {
     margin: 20px 0;
     text-align: center;
@@ -96,7 +96,7 @@ nav a.active {
     font-size: 1rem;
 }
 
-/* Weather Section */
+
 #weather {
     background-color: #e7f1f9;
     padding: 20px;
@@ -110,7 +110,7 @@ nav a.active {
     margin-top: 10px;
 }
 
-/* Company Spotlights */
+
 #company-spotlights {
     margin: 30px 0;
     text-align: center;
@@ -139,7 +139,7 @@ nav a.active {
     font-size: 1rem;
 }
 
-/* Footer */
+
 footer {
     background-color: #1a252f;
     color: white;
@@ -148,7 +148,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Design for Small Screens */
+
 @media (max-width: 600px) {
     #members-container {
         display: flex;
@@ -160,22 +160,19 @@ footer {
     }
 
 
-    /* Adjust Call to Action */
+
     .cta-link {
         padding: 10px 20px;
         font-size: 1rem;
     }
 
-    /* Adjust Company Spotlights */
+
     .spotlight {
         width: 100%;
     }
 }
 
 
-img {
-    loading: lazy;
-}
 
 
 
