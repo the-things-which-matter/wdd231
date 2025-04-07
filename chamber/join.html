@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chamber of Commerce Home Page for kampala" />
+  <meta name="author" content="Brigham Iga" />
+  <meta property="og:title" content="Join Kampala Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-image.jpg" />
+  <meta property="og:url" content="https://the-things-which-matter.github.io/wdd231/chamber/index.html" />
+  <title>San Miguel Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+  <script defer src="scripts/join.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/kampalat.webp" alt="San Miguel Chamber of Commerce Logo" width="100" loading="lazy" />
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="get" action="thankyou.html">
+      <label title="First Name">
+        First Name:
+        <input type="text" name="fname" title="First Name" required autocomplete="given-name" />
+      </label>
+
+      <label title="Last Name">
+        Last Name:
+        <input type="text" name="lname" title="Last Name" required autocomplete="family-name" />
+      </label>
+
+      <label title="Organizational Title">
+        Organizational Title:
+        <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title"
+          pattern="[A-Za-z\s-]{7,}" />
+      </label>
+
+      <label title="Email Address">
+        Email:
+        <input type="email" name="email" title="Email" required autocomplete="email" placeholder="you@example.com" />
+      </label>
+
+      <label title="Mobile Phone Number">
+        Phone:
+        <input type="tel" name="phone" title="Mobile Number" required autocomplete="tel" />
+      </label>
+
+      <label title="Business Name">
+        Business/Organization Name:
+        <input type="text" name="orgname" title="Business Name" required autocomplete="organization" />
+      </label>
+
+      <label title="Membership Level">
+        Membership Level:
+        <select name="membership" title="Membership Level">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label title="Business Description">
+        Business/Organization Description:
+        <textarea name="description" title="Business Description" rows="4"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp" />
+
+      <input type="submit" value="Submit Membership Application" />
+    </form>
+
+    <section class="memberships">
+      <div class="member-card">
+        <h3>NP Membership</h3>
+        <p>Perfect for nonprofits. Free benefits and exposure.</p>
+        <a href="#" data-modal="np-modal">More Info</a>
+      </div>
+      <div class="member-card">
+        <h3>Bronze Membership</h3>
+        <p>Great for small businesses starting out.</p>
+        <a href="#" data-modal="bronze-modal">More Info</a>
+      </div>
+      <div class="member-card">
+        <h3>Silver Membership</h3>
+        <p>Includes event discounts, advertising, and more.</p>
+        <a href="#" data-modal="silver-modal">More Info</a>
+      </div>
+      <div class="member-card">
+        <h3>Gold Membership</h3>
+        <p>All benefits included + homepage spotlight.</p>
+        <a href="#" data-modal="gold-modal">More Info</a>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="np-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>NP Membership</h2>
+        <p>Free for all nonprofit organizations. Includes directory listing, networking, and free event access.</p>
+      </div>
+    </div>
+
+    <div class="modal" id="bronze-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bronze Membership</h2>
+        <p>Affordable entry for small businesses. Includes directory listing and discounted events.</p>
+      </div>
+    </div>
+
+    <div class="modal" id="silver-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Silver Membership</h2>
+        <p>Extra benefits like social media promotion, training access, and increased visibility.</p>
+      </div>
+    </div>
+
+    <div class="modal" id="gold-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gold Membership</h2>
+        <p>All-inclusive membership with homepage spotlight, banner ads, premium event discounts, and more.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> San Miguel Chamber of Commerce. All rights reserved.</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
