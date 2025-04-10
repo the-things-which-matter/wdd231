@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - Kampala Chamber</title>
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/kampalat.webp" alt="San Miguel Chamber of Commerce Logo" width="100" loading="lazy" />
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Joining!</h1>
+    <p>Here is the information you submitted:</p>
+    <ul id="confirmation"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> San Miguel Chamber of Commerce. All rights reserved.</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+
+    const params = new URLSearchParams(window.location.search);
+
+    const fname = params.get("fname");
+    const lname = params.get("lname");
+    const email = params.get("email");
+    const phone = params.get("phone");
+    const orgname = params.get("orgname");
+    const timestamp = params.get("timestamp");
+
+    const list = document.getElementById("confirmation");
+
+    const data = [
+      { label: "First Name", value: fname },
+      { label: "Last Name", value: lname },
+      { label: "Email", value: email },
+      { label: "Phone", value: phone },
+      { label: "Business/Organization Name", value: orgname },
+      { label: "Submission Date", value: timestamp }
+    ];
+
+    data.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = `${item.label}: ${item.value || 'Not provided'}`;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
