@@ -1,0 +1,60 @@
+{
+    "locations": [
+      {
+        "name": "Sunset Café",
+        "image": "images/sunset-cafe.webp",
+        "address": "123 Sunset Blvd, Hillside",
+        "description": "A cozy spot for artisan coffee and breathtaking views.",
+        "link": "https://example.com/sunset-cafe"
+      },
+      {
+        "name": "Mountain View Library",
+        "image": "images/mountain-library.webp",
+        "address": "45 Pine Street, Highland Town",
+        "description": "Explore a vast collection of books in a peaceful mountain setting.",
+        "link": "https://example.com/mountain-library"
+      },
+      {
+        "name": "GreenLeaf Market",
+        "image": "images/greenleaf-market.webp",
+        "address": "9 Grove Road, Riverside",
+        "description": "Locally grown produce and organic groceries daily.",
+        "link": "https://example.com/greenleaf-market"
+      },
+      {
+        "name": "Urban Fitness Gym",
+        "image": "images/urban-fitness.webp",
+        "address": "88 Fitness Ave, Metro City",
+        "description": "State-of-the-art fitness center with personal training.",
+        "link": "https://example.com/urban-fitness"
+      },
+      {
+        "name": "TechSpark Innovation Hub",
+        "image": "images/techspark-hub.webp",
+        "address": "201 Silicon Alley, Innovate District",
+        "description": "Empowering entrepreneurs and startups with tools and mentorship.",
+        "link": "https://example.com/techspark-hub"
+      },
+      {
+        "name": "Lakeside Resort",
+        "image": "images/lakeside-resort.webp",
+        "address": "72 Lake Drive, Serene Waters",
+        "description": "A peaceful getaway with cabins and kayaking fun.",
+        "link": "https://example.com/lakeside-resort"
+      },
+      {
+        "name": "Historic Downtown Museum",
+        "image": "images/downtown-museum.webp",
+        "address": "300 Heritage Lane, Oldtown",
+        "description": "Step back in time and explore our town’s rich history.",
+        "link": "https://example.com/downtown-museum"
+      },
+      {
+        "name": "ArtFlow Studio",
+        "image": "images/artflow-studio.webp",
+        "address": "56 Creative Corner, Art District",
+        "description": "Art classes, exhibitions, and creative community events.",
+        "link": "https://example.com/artflow-studio"
+      }
+    ]
+  }

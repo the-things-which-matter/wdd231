@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/first.css">
 
     <script defer src="scripts/first.js"></script>
+    <script defer src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -32,17 +33,18 @@
         </nav>
     </header>
 
-    <main>
+    <main class="discover-grid">
+        <aside id="visit-message" class="sidebar">Loading message...</aside>
 
-       
+        <section id="card-container" class="card-grid">
+            <!-- Cards will be injected here via JavaScript -->
+        </section>
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> San Miguel Chamber of Commerce. All rights reserved.</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
-
-
 </body>
 
 </html>
