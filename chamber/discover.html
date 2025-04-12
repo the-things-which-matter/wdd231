@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Home Page for San Miguel, El Salvador">
+    <meta name="description" content="Discover San Miguel Chamber Of Commerce">
     <meta name="author" content="Brigham Iga">
     <meta property="og:title" content="Discover Kampala Chamber Of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://the-things-which-matter.github.io/wdd231/chamber/images/kampalat.webp">
+    <meta property="og:image" content="images/hero-image.webp">
     <meta property="og:url" content="https://the-things-which-matter.github.io/wdd231/chamber/index.html">
-    <title>San Miguel Chamber of Commerce</title>
+    <title>Discover San Miguel</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/discover.css">
-
-   
     <script defer src="scripts/discover.js"></script>
 </head>
 
@@ -25,8 +23,9 @@
         <nav>
             <button id="menu-toggle">☰</button>
             <ul id="menu" class="hidden">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
+                <li><a href="index.html" class="active">Discover</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -34,18 +33,23 @@
     </header>
 
     <main class="discover-grid">
-        <h1>Discover Kampala Chamber Of Commerce</h1>
-        <aside id="visit-message" class="sidebar">Loading message...</aside>
+        <h1>Discover San Miguel Chamber Of Commerce</h1>
 
-        <section id="card-container" class="card-grid">
-            <!-- Cards will be injected here via JavaScript -->
-        </section>
+      
+        <aside id="sidebar" class="sidebar"></aside>
+    
+
+        <p id="loading-message">Loading...</p>
+    
+     
+        <section id="cards-container" class="card-grid"></section>
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> San Miguel Chamber of Commerce. All rights reserved.</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+
 </body>
 
 </html>
