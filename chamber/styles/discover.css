@@ -1,4 +1,10 @@
 /* General Styles */
+
+html, body {
+    overflow-x: hidden;
+  }
+
+
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #f8f8f8;
@@ -6,6 +12,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/*.hidden {
+  display: none;
+}*/
 
 
 header {
@@ -15,6 +25,10 @@ header {
     padding: 20px;
 }
 
+
+h1 {
+    text-align: center;
+}
 #menu-toggle {
     background: none;
     border: none;
@@ -229,6 +243,9 @@ footer {
     gap: 1.5rem;
 }
 
+
+
+
 .card {
     background: #fff;
     padding: 1rem;
@@ -315,3 +332,15 @@ footer {
         filter: brightness(1.1);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

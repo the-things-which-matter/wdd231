@@ -1,52 +1,52 @@
 {
     "locations": [
       {
-        "name": "Kampala Clock Tower",
+        "name": "Kampala Tower Technologies",
         "address": "Kampala Rd, Kampala, Uganda",
         "description": "A major city landmark marking the entrance to the city center.",
-        "image": "images/kampala1.webp"
+        "image": "images/Tech-solutions.webp"
       },
       {
-        "name": "Owino Market",
+        "name": "Environment Hero",
         "address": "Kampala, Uganda",
         "description": "One of the largest markets in East Africa, known for clothes and local goods.",
-        "image": "images/kampala2.webp"
+        "image": "images/green-earth.webp"
       },
       {
-        "name": "Gaddafi National Mosque",
+        "name": "Kampala Marketing Circle",
         "address": "Old Kampala Rd, Kampala, Uganda",
         "description": "A historic and towering mosque offering panoramic views of the city.",
-        "image": "images/kampala3.webp"
+        "image": "images/marketing.webp"
       },
       {
-        "name": "Independence Monument",
+        "name": "Kampala Techs",
         "address": "Speke Rd, Kampala, Uganda",
         "description": "Symbolizes Uganda's independence with beautiful sculptures and gardens.",
-        "image": "images/kampala4.webp"
+        "image": "images/tech-hub.webp"
       },
       {
-        "name": "Uganda Museum",
+        "name": "Fresh Farmers",
         "address": "Kira Rd, Kampala, Uganda",
         "description": "Home to cultural and historical artifacts from Uganda's rich history.",
-        "image": "images/kampala5.webp"
+        "image": "images/fresh-farm.webp"
       },
       {
-        "name": "Kabaka's Palace",
+        "name": "Kampala Skyliners",
         "address": "Mengo Hill, Kampala, Uganda",
         "description": "Residence of the Buganda King, full of cultural and historical value.",
-        "image": "images/kampala6.webp"
+        "image": "images/skyline.webp"
       },
       {
-        "name": "Ndere Cultural Centre",
+        "name": "Home Of Finances",
         "address": "Ntinda, Kampala, Uganda",
         "description": "Celebrates Ugandan music, dance, and traditions through live performances.",
-        "image": "images/kampala7.webp"
+        "image": "images/financial-services.webp"
       },
       {
-        "name": "Bahá'í Temple",
+        "name": "The Great Market",
         "address": "Kikaya Hill, Kampala, Uganda",
         "description": "One of only a few Bahá'í Houses of Worship worldwide with beautiful gardens.",
-        "image": "images/kampala8.webp"
+        "image": "images/kampala-market.webp"
       }
     ]
   }
