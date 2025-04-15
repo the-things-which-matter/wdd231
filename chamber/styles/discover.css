@@ -300,6 +300,11 @@ footer {
         transform: none;
         filter: none;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -323,16 +328,17 @@ footer {
         transform: scale(1.05);
         transition: transform 0.3s ease, filter 0.3s ease;
         filter: brightness(1.1);
+    }
 
-        #menu {
+     #menu {
             display: flex !important;
         }
     
-        #menu.hidden {
+    #menu.hidden {
             display: flex !important; 
         }
 
-}}
+}
 
 
 @media (min-width: 1025px) {
@@ -358,7 +364,25 @@ footer {
 
 
 
+@media (min-width: 641px) {
+    #menu {
+        display: flex !important;
+        justify-content: center;
+        gap: 20px;
+    }
 
+    #menu.hidden {
+        display: flex !important; 
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
 
 
 
