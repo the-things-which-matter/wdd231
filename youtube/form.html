@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Kampala Chamber of Commerce - Home page" />
+    <meta property="og:title" content="Content learning sign up form page" />
     <meta property="og:url" content="https://the-things-which-matter.github.io/wdd230/chamber/index.html" />
     <meta property="og:image" content="https://sl.bing.net/hKS41zDF8mW" />
     <meta property="og:type" content="website" />
     <meta name="description"
-        content="Welcome to Kampala Chamber of Commerce - Business & Community Growth. This page introduces you to what the Kampala Chamber of Commerce does for both business owners and the community too.">
+        content="Complete this form to register as a member of this content learning organisation to start and grow your online business.">
     <meta name="author" content="Brigham Iga">
 
     <title>Kampala Chamber of Commerce - Home page</title>
@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amita&family=Noto+Sans:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/youtube.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/youtube.js" defer></script>
 </head>
@@ -40,7 +40,36 @@
     </header>
 
     <main>
-       
+        <h2>Web Lab - Form Validation</h2>
+        <form id="membership-form" method="post" action="record.html">
+            <label for="username">Username:
+                <input type="text" id="username" name="username" required>
+            </label>
+
+            <label for="password">Password:
+                <input type="password" id="password" name="password" required
+                    pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 alphanumeric characters.">
+            </label>
+
+            <label for="confirmPassword">Confirm Password:
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </label>
+
+            <div id="password-message"></div>
+
+            <label for="email">Email:
+                <input type="email" id="email" name="email" required
+                    pattern="[a-zA-Z0-9._%+-]+@byui\\.edu$" title="Please enter a valid @byui.edu email address.">
+            </label>
+
+            <label for="rating">Page Rating: <span id="ratingValue">5</span>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     
