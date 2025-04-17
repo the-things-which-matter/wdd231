@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Last modified
+   
     const lastModified = document.getElementById('last-modified');
     if (lastModified) lastModified.textContent = document.lastModified;
 
-    // Hamburger menu
+    
     const hamburger = document.querySelector('.hamburger-button');
     const menu = document.getElementById('menu-items');
     hamburger.addEventListener('click', () => {
         menu.classList.toggle('show');
     });
 
-    // Dark mode toggle
+    
     const toggle = document.getElementById('darkModeToggle');
     if (toggle) {
         toggle.addEventListener('click', () => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ✅ Load YouTube content niches
+  
     fetch('content/types.json')
         .then(response => {
             if (!response.ok) {

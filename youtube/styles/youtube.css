@@ -1,4 +1,4 @@
-/* base.css */
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -50,13 +50,13 @@ nav ul {
     width: 100%; 
 
 
-    display: none; /* hidden by default */
+    display: none; 
     
 }
 
 
 nav ul.show {
-    display: flex; /* visible when .show is added */
+    display: flex; 
     flex-direction: column;
     background-color: #2c3e50;
     width: 100%;
@@ -122,7 +122,7 @@ footer {
     margin-top: 1rem;
 }
 
-/* Hero Image Section */
+
 .hero {
     position: relative;
     width: 100%;
@@ -152,7 +152,6 @@ footer {
 
 
 
-/* Dark Mode Styles */
 .dark-mode {
     background-color: #1a1a1a;
     color: #f5f5f5;
@@ -255,7 +254,7 @@ footer {
     }
 
     nav ul {
-        display: flex !important; /* always show on larger screens */
+        display: flex !important; 
         flex-direction: row;
         justify-content: center;
         gap: 1rem;

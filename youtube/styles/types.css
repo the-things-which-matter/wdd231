@@ -245,7 +245,7 @@ footer {
     }
 
     nav ul {
-        display: flex !important; /* always show on larger screens */
+        display: flex !important; 
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
