@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Update last modified
     const lastModified = document.getElementById('last-modified');
     if (lastModified) {
         lastModified.textContent = document.lastModified;
@@ -12,7 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('show');
     });
 
-    // ✅ Load testimonials
+    // Dark mode toggle
+    const toggle = document.getElementById('darkModeToggle');
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    }
+
+    // Load testimonials
     fetch('content/testimony.json')
         .then(response => {
             if (!response.ok) {
@@ -37,26 +44,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         })
         .catch(error => console.error('Failed to load testimonials:', error));
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const lastModified = document.getElementById('last-modified');
-    if (lastModified) {
-        lastModified.textContent = document.lastModified;
-    }
-
-    // Dark mode toggle (optional if you're implementing this)
-    const toggle = document.getElementById('darkModeToggle');
-    if (toggle) {
-        toggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    }
-
-    // Hamburger menu toggle
-    const hamburger = document.querySelector('.hamburger-button');
-    const menu = document.getElementById('menu-items');
-    hamburger.addEventListener('click', () => {
-        menu.classList.toggle('show');
-    });
 });

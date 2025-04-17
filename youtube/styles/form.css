@@ -49,6 +49,8 @@ nav ul {
     flex-direction: column; 
     align-items: center;
     width: 100%; 
+
+    display: none; /* hidden by default */
 }
 
 nav ul li {
@@ -64,6 +66,16 @@ nav ul li a {
 nav ul li a.active {
     text-decoration: underline;
 }
+
+
+nav ul.show {
+  display: flex; /* visible when .show is added */
+  flex-direction: column;
+  background-color: #2c3e50;
+  width: 100%;
+}
+
+
 
 #menuToggle {
     background: none;
@@ -226,3 +238,28 @@ footer {
       margin: 1rem;
     }
   }
+
+
+
+
+
+  @media (min-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex !important; /* always show on larger screens */
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+}
