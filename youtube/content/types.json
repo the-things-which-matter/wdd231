@@ -1,0 +1,27 @@
+[
+    {
+        "logo": "images/education.webp",
+        "name": "Education",
+        "description": "Teach, explain, or simplify complex ideas for viewers."
+    },
+    {
+        "logo": "images/entertainment.webp",
+        "name": "Entertainment",
+        "description": "Create skits, parodies, or funny content to make people laugh."
+    },
+    {
+        "logo": "images/lifestyle.webp",
+        "name": "Lifestyle",
+        "description": "Share your daily routines, habits, and personal experiences."
+    },
+    {
+        "logo": "images/technology.webp",
+        "name": "Technology",
+        "description": "Review gadgets, explain tech, or share tutorials."
+    },
+    {
+        "logo": "images/finance.webp",
+        "name": "Finance",
+        "description": "Educate others about saving, investing, or building wealth."
+    }
+]

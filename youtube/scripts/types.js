@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Last modified
     const lastModified = document.getElementById('last-modified');
-    if (lastModified) {
-        lastModified.textContent = document.lastModified;
-    }
+    if (lastModified) lastModified.textContent = document.lastModified;
 
-    // Hamburger menu toggle
+    // Hamburger menu
     const hamburger = document.querySelector('.hamburger-button');
     const menu = document.getElementById('menu-items');
     hamburger.addEventListener('click', () => {
@@ -19,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Load testimonials
-    fetch('content/testimony.json')
+    // ✅ Load YouTube content niches
+    fetch('content/types.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -28,20 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            const container = document.getElementById('testimonial-cards');
-            if (!container) return;
+            const section = document.getElementById('content-niches');
+            if (!section) return;
 
-            data.forEach(testimonial => {
+            data.forEach(niche => {
                 const card = document.createElement('div');
-                card.className = 'testimonial-card';
+                card.className = 'niche-card';
 
                 card.innerHTML = `
-                    <p class="comment">"${testimonial.comment}"</p>
-                    <p class="author">– ${testimonial.name}, <span class="location">${testimonial.location}</span></p>
+                    <img src="${niche.logo}" alt="${niche.name} logo" width="100">
+                    <h3>${niche.name}</h3>
+                    <p>${niche.description}</p>
+                    <a href="https://the-things-which-matter.github.io/wdd230/youtube/form.html" class="learn-more-btn">Learn More</a>
                 `;
 
-                container.appendChild(card);
+                section.appendChild(card);
             });
         })
-        .catch(error => console.error('Failed to load testimonials:', error));
+        .catch(error => console.error('Failed to load content types:', error));
 });
